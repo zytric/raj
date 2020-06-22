@@ -42,7 +42,7 @@ this.context.fillStyle = "rgba(0,0,0,0.5)";
 Hack #2 - Can build buildings and turrets anywere on map:
 ```javascript
 //if (sidebar.canBuildHere) {
-//if (true) {
+if (true) {
 ```
 
 Hack #3 - Show radar, even without communications center
@@ -51,6 +51,12 @@ Hack #3 - Show radar, even without communications center
   if (true) { //show radar always
 ```
 
+Hack #4 - Allow building everything
 ```javascript
-
+var buildings = {
+    type: "buildings",
+    list: {
+        "temple-of-nod": {
+            //dependency: ["construction-yard", "power-plant|advanced-power-plant", "refinery", "communications-center"],
+            dependency: [], // Tada!
 ```
