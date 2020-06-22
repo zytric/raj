@@ -27,13 +27,30 @@ fog.draw = function() { }; // no more fog rendering >:)
 
 Wola! It worked. I can see the full map. Enemy base and units as well.
 
-Okey, from now on let's try to run a own version of the script, which I can "hack"/fiddle with. Tooked the JavaScript, prettified, add a redirect (add-on) in Chrome which redirected the:
+Okey, from now on let's try to intercept the browser request and run a own version of the script, which I can fiddle with. Tooked the JavaScript, prettified, add a redirect (add-on) in Chrome which redirected to mine script:
 
 `/release/cnc-0.8.3.b.js -> https://xxx.xx/my-custom-cc-client.js`
 
-So let's go crazy. I realy suck at RTS-games so let's modify the crap out of the game client.
+This worked. So let's go crazy. I realy suck at RTS-games so I need all help I can get. Came up with the following modifications.
 
-`
-//this.context.fillStyle = "black"; 
-this.context.fillStyle = "rgba(0,0,0,0.5) //transparent fog, now we can see the enemy";
-`
+Hack #1 - Transparent fog:
+```javascript
+//this.context.fillStyle = "rgba(0,0,0,1)";
+this.context.fillStyle = "rgba(0,0,0,0.5)";
+```
+
+Hack #2 - Can build buildings and turrets anywere on map:
+```javascript
+//if (sidebar.canBuildHere) {
+//if (true) {
+```
+
+Hack #3 - Show radar, even without communications center
+```javascript
+  //if (sidebar.mapEnabled && sidebar.mapMode) {
+  if (true) { //show radar always
+```
+
+```javascript
+
+```
