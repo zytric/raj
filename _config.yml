@@ -4,7 +4,7 @@ tagline:             'Notebook'
 description:         ''
 url:                 https://zytric.github.io/raj
 baseurl:             ''
-paginate:            5
+paginate:            1
 permalink:           pretty
 
 # About/contact
