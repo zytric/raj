@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hacking C&C
+title: Hacking Command & Conquer (1997)
 category: Code
 tags: Hacking C&C
 ---
