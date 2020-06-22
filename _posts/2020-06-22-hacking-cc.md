@@ -19,9 +19,9 @@ Let's look under the hood. A older version of the source code were available on 
 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
 
-{{ "{% highlight javascript " }}%}  
+```javascript
 fog.draw = function() { }; // no more fog rendering >:)
-{{ "{% endhighlight " }}%} 
+```
 
 `fog.draw = function() { }; // no more fog rendering >:)`
 
