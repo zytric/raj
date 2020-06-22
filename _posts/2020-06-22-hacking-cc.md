@@ -15,7 +15,7 @@ We played a game against each other, multiplayer mode. That was a real retro fee
 
 What!? Losing? Against my collegue? That sucks. How should I live with myself? Okey. Let's move on with life, its just stupid 23 year old  game. A couple of hours later, i really couldn't let it go. 
 
-Let's look under the hood. A older version of the source code were available on [github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Intersting to read the source code of the game I were playing as a kid written in 15.000 lines of JavaScript code. In Github it looks like I am 7 years late to the party. Now I want to look at the actual code (not open source), that we were playing. The script [https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js](cnc-0.8.3.b.js) contained everything intresting (not audio and images).
+Let's look under the hood. A older version of the source code were available on [github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Intersting to read the source code of the game I were playing as a kid written in 15.000 lines of JavaScript code. In Github it looks like I am 7 years late to the party. Now I want to look at the actual code (not open source), that we were playing. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything intresting (not audio and images).
 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
 
