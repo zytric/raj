@@ -20,8 +20,12 @@ Let's look under the hood. A older version of the source code were available on 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
 `fog.draw = function() { }; // no more fog rendering >:)`
 
-Wola! It worked. I can see the full map.
+Wola! It worked. I can see the full map. Enemy base and units as well.
 
-Okey, from now on let's try to run a own version of the script, which I can "hack"/fiddle with. I copied the JavaScript, prettified, add a redirect in Chrome which redirected the:
-`/release/cnc-0.8.3.b.js -> https://xxx.xx/myCC.js`
+Okey, from now on let's try to run a own version of the script, which I can "hack"/fiddle with. Tooked the JavaScript, prettified, add a redirect (add-on) in Chrome which redirected the:
+`/release/cnc-0.8.3.b.js -> https://xxx.xx/my-custom-cc-client.js`
 
+So let's go crazy. I realy suck at RTS-games so let's modify the crap out of the game client.
+`//this.context.fillStyle = "black"; 
+this.context.fillStyle = "rgba(0,0,0,0.5) //transparent fog, now we can see the enemy";
+`
