@@ -18,7 +18,7 @@ What!? Losing? Against my collegue? That sucks. How should I live with myself? O
 Let's look under the hood. A older version of the source code were available on [github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Intersting to read the source code of the game I were playing as a kid written in 15.000 lines of JavaScript code. In Github it looks like I am 7 years late to the party. Now I want to look at the actual code (not open source), that we were playing. The script [https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js](cnc-0.8.3.b.js) contained everything intresting (not audio and images).
 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
-`fog.draw = function() { // no more fog rendering };`
+`fog.draw = function() { }; // no more fog rendering >:)`
 
 Wola! It worked. I can see the full map.
 
