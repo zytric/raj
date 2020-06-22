@@ -13,25 +13,22 @@ We played a game against each other, multiplayer mode. That was a real retro fee
 
 ``sounds.play("mission_failure");``
 
-What!? Losing? Against my collegue? That sucks. How should I live with myself? Okey. Let's move on with life, its just stupid 23 year old  game. A couple of hours later, i really couldn't let it go. 
+I lost the game. What!? Losing? That sucks. How should I live with myself? Okey. Let's move on with with life, its just stupid 23 year old game someone recreated in JavaScript. A couple of hours later... hm.. in JavaScript? Let's look in to that...
 
-Let's look under the hood. A older version of the source code were available on [github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Intersting to read the source code of the game I were playing as a kid written in 15.000 lines of JavaScript code. In Github it looks like I am 7 years late to the party. Now I want to look at the actual code (not open source), that we were playing. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything intresting (not audio and images).
+A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Intersting and fun to read the source code of the game I was playing as a kid, written in just 15.000 lines. In Github it looks like I'm 7 years late to the party. Whatever, I'm here now. Now I want to look at the actual code (not open source), that we were playing. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images).
 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
-
 ```javascript
 fog.draw = function() { }; // no more fog rendering >:)
 ```
 
-`fog.draw = function() { }; // no more fog rendering >:)`
+Wola! It worked. I can see the full map. Enemy base and units as well! However. I wouldn't come far with this, I suck at RTS-games. Stayed away from online gaming since Unreal Tournament (1999) to not get adicted again.
 
-Wola! It worked. I can see the full map. Enemy base and units as well.
+Okey, wounde if we can intercept the browser request and run a own version of the script, which we fiddle with. Let's copy the JavaScript, prettify it, upload it to a url, add a redirect (with a add-on) in Chrome which redirected to mine script, instead of the website script:
 
-Okey, from now on let's try to intercept the browser request and run a own version of the script, which I can fiddle with. Tooked the JavaScript, prettified, add a redirect (add-on) in Chrome which redirected to mine script:
+`/release/cnc-0.8.3.b.js -> https://xxxx.com/my-custom-cc-client.js`
 
-`/release/cnc-0.8.3.b.js -> https://xxx.xx/my-custom-cc-client.js`
-
-This worked. So let's go crazy. I realy suck at RTS-games so I need all help I can get. Came up with the following modifications.
+It worked! So let's go crazy. I need all help I can get. After a couple of hours I came up with the following hacks.
 
 Hack #1 - Transparent fog:
 ```javascript
