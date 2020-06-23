@@ -63,7 +63,7 @@ var buildings = {
 There are some prevention in the client which not allow going to crazy. A game hash like *_1487_461_8_459_3_549_6_598_606_* is sent with each server sendCommand genereated by:
 ```javascript
 var gameHash = "_" + game.gameTick + "_" + game.items.length + "_" + game.infantry.length + "_" + (game.infantry.length ? game.infantry[game.infantry.length - 1].uid + "_" : "0_") + game.vehicles.length + "_" + (game.vehicles.length ? game.vehicles[game.vehicles.length - 1].uid + "_" : "0_") + game.buildings.length + "_" + (game.buildings.length ? game.buildings[game.buildings.length - 1].uid + "_" : "0_") + game.counter + "_";
-        return gameHash
+return gameHash
 ```
 
 If this hash isn't valid the server will send a "report_desync" command and report the current state to the server including the game.items. The game will be over and you will get a message saying:
