@@ -3,9 +3,10 @@ layout: default
 title: Reading
 ---
 
-<h1>Read books</h1>
+<h1>Books</h1>
 
-{% for post in paginator.posts | where: post.category, "Reading" %}
+{% assign readings = posts | where: "category", "Reading" %}
+{% for post in readings %}
   <div class="book">
     <a href="{{ post.url | absolute_url }}">
       {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
