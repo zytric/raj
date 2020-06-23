@@ -3,7 +3,7 @@ layout: post
 title: Hacking Darwin (Jamie Metzl)
 category: Reading
 rating: ⭐⭐⭐
-language: English
+language: 🇺🇸
 tags: 
 ---
 
