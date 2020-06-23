@@ -5,11 +5,14 @@ title: Reading
 
 <h1>Books</h1>
 
-{% assign readings = posts | where: "category", "Reading" %}
-{% for post in readings %}
-  <div class="book">
-    <a href="{{ post.url | absolute_url }}">
-      {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
-    </a>
-  </div>
+{% for post in posts %}
+  {% if post.category = "Reading" %}
+
+    <div class="book">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
+      </a>
+    </div>
+
+  {% endif %}
 {% endfor %}
