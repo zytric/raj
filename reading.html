@@ -5,12 +5,14 @@ title: Reading
 {% assign readings = site.posts | where: "category", "Reading" %}
 
 <h1>Books</h1>
-Books read 2020: {{ readings.size }}
+Count: {{ readings.size }}
+
 
 {% for post in readings | where "category", "Reading" %}
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
+        {{ post.title }} {{ post.rating }}
+          <span class="post-date">{{ post.date | date_to_string }}</span>
       </a>
     </div>
 {% endfor %}
