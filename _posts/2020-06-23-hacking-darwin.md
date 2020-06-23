@@ -2,7 +2,6 @@
 layout: post
 title: Hacking Darwin (Jamie Metzl)
 category: Reading
-date: 2020-06-23
 rating: ⭐⭐⭐
 language: 🇺🇸
 tags: 
