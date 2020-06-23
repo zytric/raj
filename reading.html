@@ -6,7 +6,7 @@ title: Reading
 <h1>Books 1</h1>
 
 {% for post in posts %}
-  {% if post.category = "Reading" %}
+
 
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
@@ -14,5 +14,5 @@ title: Reading
       </a>
     </div>
 
-  {% endif %}
+
 {% endfor %}
