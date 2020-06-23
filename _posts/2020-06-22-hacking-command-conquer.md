@@ -68,5 +68,5 @@ Is people acutally still playing this game? Yes. It takes a couple of minutes to
 
 ## Conclusion
 
-Yes, this is just a proof-of-concept game. A browser game can be vulnarble for cheaters. Even if we move more logic to the server side as well as minimize and obstruct the JavaScript it's still possible to create auto-build and other tools.
+Yes, this is just a proof-of-concept game. Compared with compiled code application, an application with the source code easily accesible for the user makes it tricky for making sure the user is well behaved and not fiddling with the client. Even if we move more logic to the server side, the door is wide open for creating tools benefitting the user. 
 
