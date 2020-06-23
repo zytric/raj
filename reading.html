@@ -3,4 +3,10 @@ layout: default
 title: Reading
 ---
 
-a
+{% for post in paginator.posts | where: "category", "book" %}
+  <div class="book">
+    <a href="{{ post.url | absolute_url }}">
+      {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
+    </a>
+  </div>
+{% endfor %}
