@@ -3,15 +3,15 @@ layout: default
 title: Reading
 ---
 
-<h1>Books 4</h1>
+<h1>Books 5</h1>
 
-{% for post in site.posts | where "category", "Reading" %}
+{% assign readings = site.posts | where: "category", "Reading" %}
+{% for post in readings | where "category", "Reading" %}
 
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
       </a>
     </div>
-
 
 {% endfor %}
