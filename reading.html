@@ -5,7 +5,7 @@ title: Reading
 
 ## Read books 2020
 
-{% for post in paginator.posts | where: "category", "Reading" %}
+{% for post in paginator.posts | where: post.category, "Reading" %}
   <div class="book">
     <a href="{{ post.url | absolute_url }}">
       {{ post.title }}  <span class="post-date">{{ post.date | date_to_string }}</span>
