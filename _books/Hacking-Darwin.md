@@ -1,10 +1,13 @@
 ---
 layout: reading
-title: Hacking Darwin (Jamie Metzl)
-category: Reading
+title: Hacking Darwin by Jamie Metzl
+date: 2020-06-24
+tags: Genetics Future
 rating: ⭐⭐⭐
 language: 🇺🇸
-tags: 
+ISBN: 
+Published: 
+Publisher: 
 ---
 
  * [2020-06-24] Hacking Darwin (Jamie Metzl)
