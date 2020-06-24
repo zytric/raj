@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: reading
 title: Hacking Darwin (Jamie Metzl)
 category: Reading
 rating: ⭐⭐⭐
