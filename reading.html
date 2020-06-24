@@ -4,13 +4,13 @@ title: Reading
 ---
 {% assign readings = site.posts | where: "category", "Reading" %}
 
-5
+6
 Count: {{ readings.size }}
 
 {{ page.collection }}
 
 
-{% for post in site.collections.books %}
+{% for post in site.books %}
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }} {{ post.rating }}
