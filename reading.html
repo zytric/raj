@@ -9,7 +9,7 @@ a3
 Count: {{ readings.size }}
 
 
-{% for post in site.collection.books %}
+{% for post in page.collection.books %}
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }} {{ post.rating }}
