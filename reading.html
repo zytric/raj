@@ -8,7 +8,7 @@ title: Reading
 Count: {{ readings.size }}
 
 
-{% for post in site.collection.books %}
+{% for post in site.collections.books %}
     <div class="book">
       <a href="{{ post.url | absolute_url }}">
         {{ post.title }} {{ post.rating }}
