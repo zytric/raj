@@ -4,11 +4,8 @@ title: Reading
 ---
 {% assign readings = site.posts | where: "category", "Reading" %}
 
-6
-Count: {{ readings.size }}
-
-{{ page.collection }}
-
+## Books read this year
+<div>{% for post in site.books %}<span title="{{ post.title }}">📙</span>{% endfor %}</div>
 
 {% for post in site.books %}
     <div class="book">
