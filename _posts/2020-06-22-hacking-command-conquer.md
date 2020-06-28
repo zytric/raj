@@ -11,9 +11,9 @@ We played a game against each other, multiplayer mode. That was a retro feeling.
 
 *"You have lost the match."*
 
-I lost the game. What!? Losing? That sucks. How should I live with myself? Just kidding, let's move on with with life, its just stupid 20 year old game someone recreated in JavaScript. Hah! A couple of hours later... hm... in JavaScript? Let's look in to that.
+I lost the game 😢. Losing sucks. How should I live with myself? Just kidding, let's move on with with life, its just stupid 20 year old game someone recreated in JavaScript with an Node.js server. Hah! A couple of hours later... hm... a client-side game? Let's look in to that.
 
-A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game I was playing as a kid, written in just 15.000 lines. In Github it looks like Im late to the party, no code changes here last 7 years. Whatever, I'm here to party now. Now I want to look at the actual code (not the open source). To script were rewritten but not relased. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
+A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game (anyway a copy of it) I was playing as a kid, written in just 15.000 lines. In Github it looks like Im late to the party, no code changes here last 7 years. Whatever, I'm here to party now. Now I want to look at the actual code (not the open source). To script were rewritten but not relased. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
 
 Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
 ```javascript
