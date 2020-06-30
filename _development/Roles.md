@@ -5,7 +5,6 @@ date: 2020-06-09
 tags: 
 ---
 
-
  * CEO
  * CTO
  * CIO
@@ -23,4 +22,7 @@ vp of product
 head of engineering
 
 ## SCRUM
+ * Development Team
  * Product Owner
+ * Scrum Master
+ 
