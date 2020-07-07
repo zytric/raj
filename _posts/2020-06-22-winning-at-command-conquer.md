@@ -76,6 +76,11 @@ for (const h of eh) {
 }
 ```
 
+Make opponent sell one of his refinerys
+```javascript
+var refinery = game.items.filter(i => i.name == "refinery" && i.player != game.player)[0];
+game.sendCommand([refinery.uid], { type: "sell" });
+```
 
 ## Conclusion
 
