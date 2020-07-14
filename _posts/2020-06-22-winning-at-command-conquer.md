@@ -18,7 +18,7 @@ Acording to Pablo Picasso...
 
 `“Learn the rules like a pro, so you can break them like an artist.”`
 
-A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game (a rewrite of it) I was playing as a kid, written in just 15.000 lines. In Github it looks like I'm late to the party. No code changes last 7 years. But. I'm here now. Now I want to look at the actual code (not the open source). The online script were rewritten but not as open source. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
+A older version of the source code is available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the code. Awesome to read the source code of the game I was playing as a kid (a rewrite of it). All written in just 15k lines. Looks like I'm late to the party. No code changes last 7 years. But. I'm here now. Now I want to look at the actual code (not the open source). The online script were rewritten but not as open source. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
 
 Hey are people acutally still playing this game? Yes. Sometimes it takes a few minutes to find an opponent.
 
@@ -91,9 +91,8 @@ var refinery = game.items.filter(i => i.name == "refinery" && i.player != game.p
 game.sendCommand([refinery.uid], { type: "sell" });
 ```
 
-I will stop fooling around here. We have enough knowlage winning a game. I tried a couple of games and replayed them. Now, as a high lever player 😈.
-
+I will stop fooling around here. We have enough knowlage winning a game. I tried a couple of games and replayed them. Winner winner chicken dinner ✌.
 
 ## Final words
 
-Yes, this is just a old proof-of-concept game I stumbled upon. Good work Adityaravi Shankar writing it! Fun and educating playing around with the game and its concepts. I guess increasing security in a pure browser game will be hard, even if putting more logic at server side. It will still be possible to build auto-builders and other tools. If you gonna be a evil cheater as me I suggest you to be kind to your opponents and dont ruin to much of their fun ❤.
+This is an old proof-of-concept game I stumbled upon. Good work Adityaravi Shankar writing it! Fun and educating playing around with the game and its concepts. I guess increasing security in a pure browser game will be hard, even if putting more logic at server side. It will still be possible to build cheat-tools e.g. a auto-builder in this case. Be kind to your opponents, dont ruin their fun ❤.
