@@ -89,7 +89,7 @@ var refinery = game.items.filter(i => i.name == "refinery" && i.player != game.p
 game.sendCommand([refinery.uid], { type: "sell" });
 ```
 
-Okey, I will stop hacking here. We have enough knowlage winning a game. Let's go for a game against a opponent.
+Okey, I will stop playing around here. We have enough knowlage winning a game. Tried a couple of games.
 
 
 ## Conclusion
