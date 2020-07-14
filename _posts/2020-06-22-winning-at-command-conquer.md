@@ -90,7 +90,7 @@ var refinery = game.items.filter(i => i.name == "refinery" && i.player != game.p
 game.sendCommand([refinery.uid], { type: "sell" });
 ```
 
-I will stop fooling around here. We have enough knowlage winning a game. I tried a couple of games and replayed them. Winning! With some help 👍.
+I will stop fooling around here. We have enough knowlage winning a game. I tried a couple of games and replayed them. Now, as a high lever player 😈.
 
 
 ## Final words
