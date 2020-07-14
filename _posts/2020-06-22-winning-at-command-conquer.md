@@ -62,19 +62,19 @@ Like a laser in opponents base.
 
 Allright. This would made you opponent lose his fighting spirit and think you are a "f*cking noob cheater".
 
-There are some "prevention" in the client which not allow you going to crazy. A game hash like *_1487_461_8_459_3_549_6_598_606_* is sent with each server sendCommand genereated by:
+There are some "prevention" in the client which not allow you going to crazy. A game hash like *_1487_461_8_459_3_549_6_598_606_* is sent with each server sendCommand genereated in the following fashion:
 ```javascript
 var gameHash = "_" + game.gameTick + "_" + game.items.length + "_" + game.infantry.length + "_" + (game.infantry.length ? game.infantry[game.infantry.length - 1].uid + "_" : "0_") + game.vehicles.length + "_" + (game.vehicles.length ? game.vehicles[game.vehicles.length - 1].uid + "_" : "0_") + game.buildings.length + "_" + (game.buildings.length ? game.buildings[game.buildings.length - 1].uid + "_" : "0_") + game.counter + "_";
 ```
 
-This isn't actually a hack preventation, it is a sync validation which send a "report_desync" command and report the current state to the server including the game items. The game will be over and you will get a message saying:
+This isn't actually a hack preventation, it is a sync validation between the state between the players which send a "report_desync" command and report the current state to the server including the game items. The game will be over and you will get a message saying:
 ´Your game has gone out of sync with the other player. The administrator has been notified and he will review your game as soon as possible.´
 
-It's cool how the game is built in a simple immutable way with game-ticks where all actions are pushed into the game state, for all players. These commands are replayd by all players and hopefully all clients have the save sync hash, else the game is ended. By writing the following in the console you can see the game state:
+It's cool how the game is built in a simple immutable way with game-ticks where all actions are pushed into the game state, for all players. These commands are replayd by all players and hopefully all clients have the save sync hash, else the game is ended. By executing the following in the console you can see the game state:
 
-![Build anywhere](/public/images/cc-save.png "Build anywhere")
+![Console](/public/images/cc-save.png "Console")
 
-Hm... wounder if we can move opponents units by sending a command for his units. Let's try stopping the enemy harvester from harvesting, and just standing there.
+Hm... wounder if we can control opponents units by sending a command for his units. Let's try stopping the enemy harvester from harvesting, and just standing there.
 
 ```javascript
 var eh = game.items.filter(i => i.name == "harvester" && i.player != game.player);
@@ -90,10 +90,9 @@ var refinery = game.items.filter(i => i.name == "refinery" && i.player != game.p
 game.sendCommand([refinery.uid], { type: "sell" });
 ```
 
-Okey, I will stop playing around here. We have enough knowlage winning a game. Tried a couple of games.
+I will stop fooling around here. We have enough knowlage winning a game. I tried a couple of games and replayed them. Winning! With some help 👍.
 
 
-## Conclusion
+## Final words
 
-Yes, this is just a proof-of-concept game. Compared with compiled code application, an application with the source code easily accesible for the user makes it tricky for making sure the user is well behaved and not fiddling with the client. Even if we move more logic to the server side, the door is wide open for creating tools benefitting the user. However very fun and educating playing around.
-
+Yes, this is just a old proof-of-concept game I stumbled upon. Good work Adityaravi Shankar writing it! Fun and educating playing around with the game and its concepts. I guess increasing security in a pure browser game will be hard, even if putting more logic at server side. It will still be possible to build auto-builders and other tools. If you gonna be a evil cheater as me I suggest you to be kind to your opponents and dont ruin to much of their fun ❤.
