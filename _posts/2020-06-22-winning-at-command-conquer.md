@@ -14,7 +14,8 @@ We played a game against each other, multiplayer mode. A couple of minutes later
 
 I lost the game 😭. Whatever, it's just a stupid 20 year old game someone recreated in JavaScript with an Node.js server. Hm... a client-side game? Let's look in to that.
 
-Acording to Pablo Picasso we should
+Acording to Pablo Picasso...
+
 `“Learn the rules like a pro, so you can break them like an artist.”`
 
 A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game (a rewrite of it) I was playing as a kid, written in just 15.000 lines. In Github it looks like I'm late to the party. No code changes last 7 years. But. I'm here now. Now I want to look at the actual code (not the open source). The online script were rewritten but not as open source. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
