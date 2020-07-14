@@ -1,35 +1,35 @@
 ---
 layout: post
-title: Winning at Command & Conquer
+title: Hacking Command & Conquer
 category: Code
 published: false
 tags: Hacking C&C
 ---
 
-My colleague and I were talking about retro games. A couple of minutes later we were battling [Command & Conquer](https://www.adityaravishankar.com/projects/games/command-and-conquer) (1997) in the browser. [A guy](https://www.adityaravishankar.com/2011/11/command-and-conquer-programming-an-rts-game-in-html5-and-javascript) had actually recrated the game in HTML5 and JavaScript, impressive.
+My colleague and I were talking about retro games. A couple of minutes later we were battling a browser version of [Command & Conquer](https://www.adityaravishankar.com/projects/games/command-and-conquer) (1997). [A guy](https://www.adityaravishankar.com/2011/11/command-and-conquer-programming-an-rts-game-in-html5-and-javascript) actually recrated the game in HTML5 and JavaScript. Impressive 👌.
 
 We played a game against each other, multiplayer mode. A couple of minutes later...
 
-*"You have lost the match."*
+*"You have lost the match."* 
 
-I lost the game 😢. Let's move on with with life, its just stupid 20 year old game someone recreated in JavaScript with an Node.js server. Hah! A couple of hours later... hm... a client-side game? Let's look in to that.
+I lost the game 😭. Whatever, it's just a stupid 20 year old game someone recreated in JavaScript with an Node.js server. Hm... a client-side game? Let's look in to that.
 
+Acording to Pablo Picasso we should
 `“Learn the rules like a pro, so you can break them like an artist.”`
-― Pablo Picasso
 
-A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game (anyway a copy of it) I was playing as a kid, written in just 15.000 lines. In Github it looks like I'm late to the party, no code changes here last 7 years. Whatever, I'm here now. Now I want to look at the actual code (not the open source). To script were rewritten but not as open source. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
+A older version of the source code were available on [Github](https://github.com/adityaravishankar/command-and-conquer). I analyzed the source code. Awesome to read the source code of the game (a rewrite of it) I was playing as a kid, written in just 15.000 lines. In Github it looks like I'm late to the party. No code changes last 7 years. But. I'm here now. Now I want to look at the actual code (not the open source). The online script were rewritten but not as open source. The script [cnc-0.8.3.b.js](https://www.adityaravishankar.com/projects/games/command-and-conquer/release/cnc-0.8.3.b.js) contained everything for the game client (not audio and images). Interesting!
 
-Is people acutally still playing this game today? Yes. Sometimes it takes a couple of minutes to find an opponent but no problem to find a opponent.
+Hey are people acutally still playing this game? Yes. Sometimes it takes a few minutes to find an opponent.
 
-Let's see if the game is "hackable". I came up with the following code for not displaying any fog on the map. Chrome console:
+Let's see if the game is "hackable" 🧐. I came up with the following proof of concept for not displaying any fog on the map. Running directly in Chrome console:
 ```javascript
 fog.draw = function() { };
 ```
 
 Wola! It worked. I can see the full map by removing replacing the fog.draw() function. Enemy base and units are visible as well! 
-I wouldn't come far with this, I suck at RTS-games. I stayed away from online gaming since addiction to Unreal Tournament in 1999.
+For winning a game. I wouldn't come far with this. I stayed away from online gaming since addiction to Unreal Tournament in 1999. So winning an RTS game may be hard.
 
-Okey, what if we can intercept the browsers request for cnc-0.8.3.b.js (the gaming client) and run a own version of the script, which we can fiddle with. Let's copy the JavaScript, prettify it, upload it to a own server, add a redirect (with a add-on) in the browser which redirected to mine script, instead of the website script like:
+Okey, what if we can intercept the browsers request for cnc-0.8.3.b.js and run our own version of the script. This one we can fiddle with. Let's copy the JavaScript, prettify it, upload it to a own server, add a redirect (with a Chrome add-on) in the browser which redirected to mine script, instead of the website script like:
 
 `/release/cnc-0.8.3.b.js -> https://mysite.com/my-custom-cc-client.js`
 
