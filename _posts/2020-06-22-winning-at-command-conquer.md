@@ -56,7 +56,8 @@ What can we do more? Allow build buildings and turrets anywere on map
 if (true) {
 ```
 
-Like a laser into opponent base.
+Like a laser in opponents base.
+
 ![Build anywhere](/public/images/cc-build.png "Build anywhere")
 
 Allright. This would made you opponent lose his fighting spirit and think you are a "f*cking noob cheater".
