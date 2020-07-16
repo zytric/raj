@@ -49,3 +49,5 @@ It's an intersting anecdote. If I am watching TV everyday. How long time will it
 
 > The only hard-part of sky-diving, is the ground.
 
+## Celebrate
+Don't forget to celebrate and reward yourself. Carrot yourself; If I do X, I will Y.
