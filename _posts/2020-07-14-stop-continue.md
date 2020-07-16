@@ -42,6 +42,7 @@ As a former sky-diver I once asked my mentor. If my altimeter stops working or I
 
  > You are running your at your full speed against a wall full of razor sharp nails. Someone turns of the light. How long will you continue before stop?
 
-It's an intersting anecdote. If I am watching TV everyday. How long time will it take before something bad happens? When will I lose health? When will I lose my relationship? When will I fall behind at work from it? You will not know. But. If you continue to fall, I will give you another sky-dive quote. 
+It's an intersting anecdote. If I am watching TV everyday. How long time will it take before something bad happens? When will I lose health? When will I lose my relationship? When will I fall behind at work from it? You will not know. But. If you continue to fall, you will probably face a consequence. I will give you another sky-dive quote. 
 
 > The only hard-part of sky-diving, is the ground.
+
