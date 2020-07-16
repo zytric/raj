@@ -41,11 +41,11 @@ Your case is special and you know a guy it works well for.
 You need to find and accept your bad activities as bad. Stopping them will probably bring you a better outcome than continue with it. A lottery-winner will probably think buying a lottery ticket was a good idéa, while it statistically would be stupid. 
 
 ## When to stop?
-As a former sky-diver I once asked my mentor. If my altimeter stops working or I can't read it, how long time can I freefall before I pull my parachute? I mean hanging in the sky at 4000 meters seems to be a risk in it self. My mentor replied.
+As a former sky-diver I once asked my mentor. If my altimeter stops working or I can't read it, how long time can I freefall before I pull my parachute? Hanging in the sky at 4000 meters seems to be a risk in it self. My mentor replied.
 
  > You are running your at your full speed against a wall full of razor sharp nails. Someone turns of the light. How long will you continue before stop?
 
-It's an intersting anecdote. If I am watching TV everyday. How long time will it take before something bad happens? When will I lose health? When will I lose my relationship? When will I fall behind at work from it? You will not know. But. If you continue to fall, you will probably face a consequence. I will give you another sky-dive quote. 
+It's an intersting anecdote. If I am watching TV everyday. How long time will it take before something bad happens? When will I lose health? when will my relations suffer? When will I fall behind at work from it? You will not know. But. If you continue to fall, you will probably face a consequence. I will give you another sky-dive quote. 
 
 > The only hard-part of sky-diving, is the ground.
 
