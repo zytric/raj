@@ -27,7 +27,6 @@ Habbit, behaviour, addiction, routine, reapeated actions. In this post we define
  * Reading static news
  * Behaving arrogant and recentful
  * Criticizing yourself for doing it
- * Keeping the activity secret or hiding it
  * Not willing to defend it for yourself or others
  
 ## Procastination
