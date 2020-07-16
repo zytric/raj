@@ -29,6 +29,9 @@ Habbit, behaviour, addiction, routine, reapeated actions. In this post we define
  * Criticizing yourself for doing it
  * Keeping the activity secret or hiding it
  * Not willing to defend it for yourself or others
+ 
+## Procastination
+Not taking a action, may be a bad action. A military commander have a higher risk losing his job by not taking an actions, rather then taking a poor one.
 
 ## Acceptance
 Your case is special and you know a guy it works well for.
