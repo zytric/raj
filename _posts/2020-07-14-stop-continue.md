@@ -6,7 +6,7 @@ tags: habbits, addication
 Can addictive activites be good for you?
 How do you know is something is good or bad for you?
 
-## 🥇 Activites that may be good for you. Have bring one or more of the following attributes.
+## 🥇 Activites that may be good for you. Should bring one or more of the following attributes.
  * Meaning 
  * physical-, mental-, or spiritual value
  * A feedback loop
