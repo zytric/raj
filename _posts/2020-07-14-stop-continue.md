@@ -1,20 +1,24 @@
 ---
+layout: post
 title: Stop - Continue
+category: health
+published: false
 tags: habbits, addication
 ---
 
 Can addictive activites be good for you?
 How do you know is something is good or bad for you?
 
-## 🥇 Activites that may be good for you. Should bring one or more of the following attributes.
+## 🥇 Good activities brings you
  * Meaning 
- * physical-, mental-, or spiritual value
- * A feedback loop
- * Opportunity, Money/Living
+ * Physical-, mental-, or spiritual value
+ * A feedback loop which makes you improve
+ * Opportunity, Money, Living
  * Knowlegde and perspective
  
-## 🚨 Activities which include any of the following. You should consider stop doing.
- * Consuming alcohol, coffine, drugs, nicotine, unhealthy foods (e.g. suger, saturated fat, processed food)
+## 🚨 Bad activities
+ * Consuming alcohol, coffine, drugs, nicotine, 
+ * Consuming unhealthy foods (e.g. suger, saturated fat, processed food)
  * Playing games
  * Watching videos
  * Reading static news
