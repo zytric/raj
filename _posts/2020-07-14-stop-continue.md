@@ -9,6 +9,9 @@ tags: habbits, addication
  * Can addictive activites be good for you? 
  * How do you know is something is good or bad for you?
 
+> "It is the nature of the wise to resist pleasures, but the foolish to be a slave to them."
+ - Epictetus
+
 ## Definitions
 Habbit, behaviour, addiction, routine, reapeated actions. In this post we define these as *activities*. That is, what you do repeatedly.
 
