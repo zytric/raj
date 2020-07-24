@@ -13,8 +13,8 @@ The following script generates a batfile with robocopy. The destination folder w
 ```javascript
 var fs = require('fs');
 
-let pathSource = "C:\\Users\\ngkst\\Desktop\\folder\\"
-let pathDestination = "C:\\Users\\ngkst\\Desktop\\folder2\\"
+let pathSource = "C:\\Users\\Desktop\\folder1\\"
+let pathDestination = "C:\\Users\\Desktop\\folder2\\"
 
 async function main() {
     let files = await getFiles(pathSource);
