@@ -8,7 +8,7 @@ tags: NodeJs Images Copy
 
 # Copy images without losing datestamp
 
-The following script generates a batfile.
+The following script generates a batfile with robocopy. The destination folder will be /YYYY-MM/filename.xxx.
 
 ```javascript
 var fs = require('fs');
