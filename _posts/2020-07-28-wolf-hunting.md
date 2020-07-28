@@ -6,7 +6,7 @@ According to a [article](https://www.newscientist.com/article/mg21228354-700-wol
 
 `Raymond Coppinger of Hampshire College in Amherst, Massachusetts, and colleagues modelled a five-strong wolf pack in pursuit of prey. They programmed each wolf to move towards the prey until it reached a certain safe distance. It then moved away from any other wolves that had reached that distance.`
 
-This is two rules:
+The two suggest rules are:
  * Move towards the prey until it reached a certain safe distance.
  * Then moved away from any other wolves that had reached that distance.
  
