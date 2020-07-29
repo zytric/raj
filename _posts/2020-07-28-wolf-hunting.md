@@ -20,7 +20,7 @@ The two suggest rules are:
  
  I previosly made an JavaScript lib making a guy being able to run around. The guy will represent a wolf. The lib works with a few functions like world.addGuy("Wolf 1", x, y), worl.guys[0].run(x, y).
  
-I produced toe following JavaScript to represent the two rules.
+I produced the following JavaScript to represent the two rules. A loop with handling all the wolfs (guys). And the cursor will be the prey (x,y).
  
 ```javascript
 for (const guy of world.guys) {
