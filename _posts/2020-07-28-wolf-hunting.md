@@ -1,4 +1,10 @@
-
+---
+layout: post
+title: Wolf hunting strategy
+category: Code
+published: false
+tags: wolf hunting
+---
 
 # Wolf hunting strategy
 
@@ -10,4 +16,17 @@ The two suggest rules are:
  * Move towards the prey until it reached a certain safe distance.
  * Then moved away from any other wolves that had reached that distance.
  
- 
+```javascript
+for (const guy of world.guys) {
+    let distance = Helper.distance(guy.x, guy.y, x, y);
+    if (distance > 80 && distance < 60) { // Achive safe distance - Between 60 and 80 pixels from mousepointer (x,y)
+        let point = Helper.closetOutsideRadius(guy.x, guy.y, x, y, 60);
+        guy.run(point.x, point.y);
+    } else {                              // Move away from closest friend
+        let neighbor = Helper.closestNeighbor(guy, world.guys);
+        let p = Helper.addDistance(neighbor.x, neighbor.y, guy.x, guy.y, 10); // move away 10px parallel away from neighbor
+        let point = Helper.closetOutsideRadius(p.x, p.y, x, y, 60); // move the point to radius 60px from mousepointer (x,y)
+        guy.run(point.x, point.y);
+    }
+}
+```
